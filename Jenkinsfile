@@ -1,5 +1,5 @@
 def IMAGE_VERSION
-pipeline {
+pipeline { 
    agent any
       stages {
 	 stage("Checkout") {
