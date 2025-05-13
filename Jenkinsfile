@@ -34,7 +34,7 @@ pipeline {
 		   withCredentials([gitUsernamePassword(credentialsId: 'github-cred')]) {
                       sh "rm -rf *"
 	              sh "rm -rf .git"
-	              sh "git clone https://github.com/stephenwon/k8s-infra-push ."
+	              sh "git clone https://github.com/stepanowon/k8s-infra-push ."
 	
 	              sh "git config user.email jenkins@example.com"
 	              sh "git config user.name jenkins"
