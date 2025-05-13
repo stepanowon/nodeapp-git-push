@@ -42,7 +42,7 @@ pipeline {
 		      sh """sed -i 's|#timestamp:.*|#timestamp:${BUILD_TIMESTAMP}|' clusters/mycluster/nodeapp-deploy.yaml"""
 	              sh "cat clusters/mycluster/nodeapp-deploy.yaml"
 	  
-	              sh "git commit -am 'Update image tag' && git push https://github.com/stephenwon/k8s-infra-push"
+	              sh "git commit -am 'Update image tag' && git push https://github.com/stepanowon/k8s-infra-push"
 	              echo "Pushed image ${IMAGE_VERSION}"
 		   }
 	       }
