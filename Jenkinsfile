@@ -31,7 +31,7 @@ pipeline {
 	 stage('update image tag in k8s manifest') {
             steps {
                script {
-		   withCredentials([gitUsernamePassword(credentialsId: 'github-cred')]) {
+		   withCredentials([gitUsernamePassword(credentialsId: 'github-cred2')]) {
                       sh "rm -rf *"
 	              sh "rm -rf .git"
 	              sh "git clone https://github.com/stepanowon/k8s-infra-push ."
